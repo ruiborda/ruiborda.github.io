@@ -130,7 +130,7 @@ function sendRUC() {
         "timeout": 0,
     };
     $.ajax(settings).done(function (response) {
-        $("#nombreComercial").val(response.nombre_comercial)
-        isValid("#nombreComercial");
+        $("#razonSocial").val(response.razon_social)
+        isValid("#razonSocial");
     });
 }
